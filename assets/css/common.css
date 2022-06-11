@@ -1,0 +1,40 @@
+body {
+    font-family: 'Gilroy', 'Noto Sans KR', sans-serif;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.2em;
+    letter-spacing: normal;
+	color: #333;
+}
+
+.blind {
+    position: absolute;
+    width: 1px; height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+}
+.title {
+    padding-left: 16px;
+    font-size: 20px;
+    line-height: 29px;
+    font-weight: 700;
+    letter-spacing: -0.05em;
+    color: #333;
+}
+.bold {
+    font-weight: 700;
+}
+.dp-no {
+    display: none;
+}
+.gnb-area button::after,
+.mypage-area a {
+    background: url(../images/sprites.png) no-repeat;
+    background-size: 100px auto;
+}
+
+a.disable {
+    pointer-events: none;
+	cursor: default;
+}
