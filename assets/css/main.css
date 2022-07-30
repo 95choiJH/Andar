@@ -70,48 +70,6 @@
 .menu-layout li img {
     width: 100%;
 }
-.txt-box {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 13px;
-    padding: 15px 0 0 5%;
-}
-.txt-box .review {
-    font-weight: 600;
-    color: #8e1f29;
-}
-.txt-box .link-item {
-    display: block;
-    padding: 10px 0;
-}
-.txt-box .price {
-    font-size: 15px;
-    line-height: 16px;
-    font-weight: 500;
-}
-.txt-box .price .discount {
-    margin-right: 5px;
-    color: #8e1f29;
-}
-.txt-box .price .line-through {
-    margin-left: 5px;
-    font-size: 13px;
-    font-weight: 400;
-    text-decoration: line-through;
-    color: #8d8d8d;
-}
-.txt-box .color {
-    font-size: 13px;
-    font-weight: 500;
-    line-height: 11px;
-    letter-spacing: -0.05em;
-    padding-top: 9px;
-    color: #999;
-}
-.txt-box .color::after {
-    content: '컬러';
-    margin-left: 2px;
-}
 .menu-layout .btn-more {
     display: block;
     width: 100%; height: 52px;
@@ -138,6 +96,10 @@
 }
 .sc-ad .link-ad {
     display: inline-block;
+    width: 100%;
+}
+.sc-ad img {
+    width: 100%;
 }
 .sc-mainitem .img-box {
     display: block;

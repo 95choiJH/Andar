@@ -5,35 +5,34 @@
 body.not-scroll {
   overflow: hidden;
 }
-body.not-scroll .shadow {
-  z-index: 1000;
+.dimmed {
+  background: #000;
+  transition-duration: .3s;
+  opacity: 0;
+}
+body.not-scroll .dimmed {
   position: fixed;
   width: 100%; height: 100%;
   left: 0; top: 0;
-  background-color: rgba(0,0,0,0);
-  overflow-x: hidden;
-  transition-duration: .3s;
-}
-body.not-scroll .shadow.active {
-  left: 81.94%;
-  background-color: rgba(0,0,0, 0.7);
+  opacity: .7;  
+  z-index: 3;
 }
 .ad-event {
   height: 40px;
-  background: #030303;
+}
+.ad-event a[class*=ad-title] {
+  position: absolute;
+  top: 0; left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
   font-family: 'Gilroy', 'Noto Sans KR', sans-serif;
   font-size: 13px;
   text-align: center;
   letter-spacing: -0.02em;
   line-height: 40px;
   color: #fff;
-}
-.ad-event > a[class*=ad-title] {
-  position: absolute;
-  top: 0; left: 50%;
-  width: 100%;
-  transform: translateX(-50%);
   transition: .3s;
+  background: #030303;
   opacity: 1;
 }
 .ad-event a[class*="ad-title"]::after {
@@ -147,7 +146,7 @@ body.not-scroll .shadow.active {
   background: #ee5728;
 }
 .main-slide .gnb-area .menu-wrap2 {
-  position: absolute;
+  position: fixed;
   top: 0; left: -81.94%;
   width: 81.94%;; height: 100vh;
   background: #fff;
@@ -203,6 +202,7 @@ body.not-scroll .shadow.active {
   font-size: 16px;
   line-height: 16px;
   font-weight: 500;
+  cursor: pointer;
 }
 .menu-wrap2 .menu-box .sub-down::before {
   content: '';
@@ -448,9 +448,8 @@ body.not-scroll .shadow.active {
 }
 .mainSlide .txt-box {
   position: absolute;
-  bottom: 0;
+  bottom: 20%; left: 2%;
   width: 100%;
-  padding: 20% 7.5%;
   font-family: 'Gilroy', 'Noto Sans KR', sans-serif;
   text-align: left;
   color: #fff;
