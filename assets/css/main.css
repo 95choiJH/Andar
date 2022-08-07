@@ -70,9 +70,9 @@
 .menu-layout li img {
     width: 100%;
 }
-.menu-layout .btn-more {
+.btn-more {
     display: block;
-    width: 100%; height: 52px;
+    height: 52px;
     margin: 0 38px;
     border: 1px solid #e0e0e0;
     font-size: 15px;
@@ -81,7 +81,7 @@
     color: #222;
     text-align: center;
 }
-.menu-layout .btn-more::after {
+.btn-more::after {
     content: '';
     display: inline-block;
     width: 19px; height: 19px;
@@ -120,7 +120,7 @@
     font-size: 16px;
     line-height: 26px;
 }
-.sc-mainitem .btn-more {
+.sc-mainitem .show {
     padding: 8px 0 8px 18px;
     border: 1px solid #1e1e1e;
     border-radius: 2px;
@@ -132,7 +132,7 @@
     color: #fff;
     box-sizing: border-box;
 }
-.sc-mainitem .btn-more::after {
+.sc-mainitem .show::after {
     content: '';
     display: inline-block;
     width: 15px; height: 10px;
